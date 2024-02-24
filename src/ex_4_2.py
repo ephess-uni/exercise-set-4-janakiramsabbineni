@@ -1,7 +1,7 @@
 from datetime import datetime
 
 def logstamp_to_datetime(datestr):
-    
+
     return datetime.strptime(datestr, '%Y-%m-%dT%H:%M:%S')
 
 # >>>> The code below will call your function and print the results
