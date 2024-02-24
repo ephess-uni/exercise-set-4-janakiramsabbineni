@@ -8,15 +8,7 @@ FILENAME = get_data_file_path('messages.log')
 # >>>> DO NOT MODIFY CODE ABOVE <<<<
 
 def get_shutdown_events(logfile):
-    """
-    Reads a log file and returns a list of lines where a shutdown was initiated.
 
-    Args:
-    - logfile (str): The path to the log file.
-
-    Returns:
-    - list: A list of lines where a shutdown was initiated. If no shutdown events are found, an empty list is returned.
-    """
     shutdown_events = []
 
     with open(logfile, 'r') as file:
