@@ -12,15 +12,7 @@ FILENAME = get_data_file_path('messages.log')
 # >>>> DO NOT MODIFY CODE ABOVE <<<<
 
 def num_shutdowns(logfile):
-    """
-    Counts and returns the number of shutdowns present in the file.
 
-    Args:
-    - logfile (str): The path to the log file.
-
-    Returns:
-    - int: The count of shutdowns present in the file.
-    """
     shutdown_events = get_shutdown_events(logfile)
     return len(shutdown_events)
 
